@@ -1,0 +1,23 @@
+{
+  "name": "guitar",
+  "version": "1.0.0",
+  "description": "music is love",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.comp.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "author": "KAS",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.2",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1"
+  }
+}

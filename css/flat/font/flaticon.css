@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+      display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    display: block;
+}
+
+.flaticon-001-accordion:before { content: "\f100"; }
+.flaticon-002-speaker:before { content: "\f101"; }
+.flaticon-003-bongo:before { content: "\f102"; }
+.flaticon-004-cassette:before { content: "\f103"; }
+.flaticon-005-cd-player:before { content: "\f104"; }
+.flaticon-006-chimes:before { content: "\f105"; }
+.flaticon-007-cloud:before { content: "\f106"; }
+.flaticon-008-download:before { content: "\f107"; }
+.flaticon-009-drumstick:before { content: "\f108"; }
+.flaticon-010-earbuds:before { content: "\f109"; }
+.flaticon-011-folder:before { content: "\f10a"; }
+.flaticon-012-gong:before { content: "\f10b"; }
+.flaticon-013-guitar:before { content: "\f10c"; }
+.flaticon-014-harmonica:before { content: "\f10d"; }
+.flaticon-015-headphones:before { content: "\f10e"; }
+.flaticon-016-hi-hat:before { content: "\f10f"; }
+.flaticon-017-hifi:before { content: "\f110"; }
+.flaticon-018-jack-cable:before { content: "\f111"; }
+.flaticon-019-maracas:before { content: "\f112"; }
+.flaticon-020-microphone:before { content: "\f113"; }
+.flaticon-021-microphone:before { content: "\f114"; }
+.flaticon-022-microphone:before { content: "\f115"; }
+.flaticon-023-mixer:before { content: "\f116"; }
+.flaticon-024-music-player:before { content: "\f117"; }
+.flaticon-025-music-player:before { content: "\f118"; }
+.flaticon-026-music-note:before { content: "\f119"; }
+.flaticon-027-music-player:before { content: "\f11a"; }
+.flaticon-028-mute:before { content: "\f11b"; }
+.flaticon-029-next:before { content: "\f11c"; }
+.flaticon-030-piano:before { content: "\f11d"; }
+.flaticon-031-pan-flute:before { content: "\f11e"; }
+.flaticon-032-partiture:before { content: "\f11f"; }
+.flaticon-033-partiture:before { content: "\f120"; }
+.flaticon-034-pause:before { content: "\f121"; }
+.flaticon-035-play:before { content: "\f122"; }
+.flaticon-036-playlist:before { content: "\f123"; }
+.flaticon-037-previous:before { content: "\f124"; }
+.flaticon-038-radio:before { content: "\f125"; }
+.flaticon-039-radio:before { content: "\f126"; }
+.flaticon-040-snare-drum:before { content: "\f127"; }
+.flaticon-041-sound-on:before { content: "\f128"; }
+.flaticon-042-speaker:before { content: "\f129"; }
+.flaticon-043-speaker:before { content: "\f12a"; }
+.flaticon-044-stop:before { content: "\f12b"; }
+.flaticon-045-tambourine:before { content: "\f12c"; }
+.flaticon-046-turntable:before { content: "\f12d"; }
+.flaticon-047-usb:before { content: "\f12e"; }
+.flaticon-048-vinyl:before { content: "\f12f"; }
+.flaticon-049-violin:before { content: "\f130"; }
+.flaticon-050-xylophone:before { content: "\f131"; }

@@ -1,0 +1,220 @@
+/* UTILITIES */
+.u-center {
+    text-align: center;
+}
+.u-margin-bottom-medium {
+    margin-bottom: 8rem;
+}
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+}
+.u-margin-bottom-small {
+    margin-bottom: 1.2rem;
+}
+.u-margin-top-inverse {
+  margin-top: -8rem;
+}
+
+/* HEADING */
+.primary-heading {
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+    @include responsive(phone){
+    margin-bottom: 2rem;
+    }
+  
+    span {
+      display: inline-block;
+      width: 100%;
+    }
+  
+    &-main {
+      text-align: left;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1rem;
+
+      @include responsive(phone) {
+        text-align: left;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+      }
+
+    }
+  
+    &-sub {
+      font-size: 2.5rem;
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: .2rem;
+
+      @include responsive(phone) {
+        text-align: left;
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: .25rem;
+      }
+    }
+}
+  
+.secondary-heading {
+    &-1, &-2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+    } 
+    &-1 {
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, $accent, $accent-dark);
+    }
+    &-2 {
+      color: lavenderblush;
+    }
+}
+  
+.tertiary-heading {
+    display: block;
+    font-size: 2rem;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, $primary-color, $primary-color-dark);
+}
+  
+.paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* 
+BUTTONS 
+*/
+.btn {
+  &:active, &:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 2rem rgba($color-black,.2);
+  }
+  &:link, &:visited {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .35rem .5rem .35rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    color: #000;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+    border-radius: 4rem;
+    transition: all .2s;
+  }
+  &:hover {
+    color: $color-white;
+    transform: translateY(-2px);
+    box-shadow: 0 .6rem 3rem rgba($color-black,.4);
+  }
+  &-pry {
+    &:link, &:visited {
+      text-transform: uppercase;
+    }
+    &:hover {
+    background-color: rgba($accent-dark, .8);
+    border: 1px solid $accent-dark;
+    }
+  }
+  &-sec {
+    margin-top: 1rem;
+    &:hover {
+    background-color: rgba($primary-color-dark, .6);
+    border: 1px solid $primary-color-dark;
+    }
+
+  }
+  &__bg {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: .6rem;
+
+    &-pry {
+      background-color: $accent;
+    }
+    &-sec {
+      background-color: $primary-color;
+    }
+  }
+  
+  &__icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #fff;
+  }
+}
+   
+    .text-button {
+    &:link, &:visited {
+      display: inline-block;
+      font-size: 1.3rem;
+      color: $accent;
+      padding: .8rem;
+      border-bottom: 1px solid $accent;
+      text-decoration: none;
+  
+      transition: all .4s;
+    }
+  
+    &:hover {
+      color: $color-white;
+      background-color: $accent;
+      padding: .8rem;
+    }
+}
+.letter__icon {
+  letter-spacing: .16rem;
+}
+
+
+.form-class {
+  margin-top: 2rem;
+}
+
+.form_submit {
+  margin: 1rem 0;
+  display: inline-block;
+  width: 30%;
+  padding: 1rem 0;
+  border-radius: .7rem;
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  color: #fff;
+  background-color: #37af65;
+}
+
+.form_input {
+  outline: none;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  width: 60%;
+  padding: .8rem 1.2rem;
+  margin-top: .4rem;
+  border-radius: .5rem;
+}
+
+.footer__icon {
+  fill: rgba(76, 175, 80, 0.8);
+  width: 4rem;
+  height: 4rem;
+}

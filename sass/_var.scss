@@ -1,0 +1,94 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+  }
+  
+  
+  @mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content };
+    }
+  }
+
+  
+$accent: #fe767a;
+$accent-dark: #cb5c5f;
+  
+$primary-color: #4CAF50;
+$primary-color-dark: #388E3C;
+  
+$secondary-text: #757575;
+$divider-color: #BDBDBD;
+  
+$light-primary-color: #C8E6C9;
+  
+$color-white: #fff;
+$color-light-grey:#eee;
+  
+$color-black: #000;
+$color-black-1: rgb(99, 99, 99);
+  
+  
+$color-white: #fff;
+$color-white-secondary: #f7f7f7;
+$color-grey: #777;
+$color-black: #000;
+  
+$color-light-grey-1: #f1efef;
+$color-light-grey-2: #999;
+$color-light-grey-3: #333;
+$color-light-grey-4: #eee;
+$color-light-grey-5: rgb(218, 216, 216);
+
+/* 
+-MEDIA QUERY MANAGER-
+412px : small phone
+600px : phone
+900px : Tablet portrait
+1200px : Tablet landscape
+1800+ : Big desktop
+
+BREAKPOINTS
+small-phone : small phone
+phone : phone
+tab-port : Tablet portrait
+tab-land : Tablet landscape
+big-desktop : Big desktop
+*/
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == small-phone {
+        @media only screen and (max-width: 26.56em) { @content };
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+}
